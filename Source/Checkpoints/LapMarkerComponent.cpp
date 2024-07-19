@@ -3,6 +3,7 @@
 
 void ULapMarkerComponent::BeginPlay()
 {
+    Super::BeginPlay();
     CheckpointState::GetInstance().OnRaceWon.AddLambda([this]()
     {
         UE_LOG(LogTemp, Log, TEXT("Lambda executed"));

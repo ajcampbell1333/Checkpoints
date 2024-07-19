@@ -10,6 +10,7 @@ UCheckpointStateComponent::UCheckpointStateComponent()
 
 void UCheckpointStateComponent::BeginPlay()
 {
+	Super::BeginPlay();
 	CheckpointState::GetInstance().RegisterCheckpoint(index, this);
 }
 
